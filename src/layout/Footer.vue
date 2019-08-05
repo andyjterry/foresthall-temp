@@ -1,11 +1,20 @@
 <template>
-  <div class="header-wrap">
-    <footer></footer>
+  <div>
+    <footer>
+      <!-- <Sponsors /> -->
+    </footer>
   </div>
 </template>
 
 <script>
-export default {};
+// import Sponsors from "../components/Sponsors";
+
+export default {
+  name: "app",
+  components: {
+    // Sponsors
+  }
+};
 </script>
 <style >
 </style>

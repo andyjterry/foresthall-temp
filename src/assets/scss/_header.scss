@@ -1,20 +1,21 @@
 .header-wrap {
   filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
-  position: relative;
+  // position: relative;
+  position: fixed;
   z-index: 9999;
 }
 
 header {
   position: relative;
-  top: -9vh;
+  top: -25vh;
   left: -3vw;
   width: 110vw;
   -webkit-transform: rotate(-4.5deg);
   transform: rotate(-4.5deg);
-  background: $red;
+  background: firebrick;
   height: 20vh;
   border-bottom: 4px solid white;
-  z-index: 9999;
+  z-index: 10;
   // clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 5vh, -90vh 12vw);
 
 }
@@ -22,7 +23,7 @@ header {
 .logo {
   position: absolute;
   left: 5vw;
-  top: 6vh;
+  top: 7.5vh;
   transform: rotate(4.5deg);
 
   h1 {
@@ -60,7 +61,7 @@ nav {
 
     &:hover {
       color: $dark;
-      font-weight: 900;
+      // font-weight: 900;
       position: relative;
       // top: -3px;
     }

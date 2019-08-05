@@ -1,15 +1,20 @@
 <template>
   <div>
-    COACHES
+    <CoachInfo />
   </div>
 </template>
 
 <script>
-export default {
+import CoachInfo from "../components/CoachInfo";
 
-}
+export default {
+  name: "app",
+  components: {
+    CoachInfo
+  }
+};
 </script>
 
 <style>
-
 </style>
+

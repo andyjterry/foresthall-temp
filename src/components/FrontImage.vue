@@ -1,10 +1,10 @@
 <template>
   <div class="FrontImage">
     <img src="src\assets\img\andy.jpg" alt />
-    <h1 class="frontimgtxt">
-      New Website
-      <br />Coming Soon...
-    </h1>
+    <div class="frontimgtxt">
+      <h1>New season new look</h1>
+      <h2>keep an eye out for our new website...</h2>
+    </div>
   </div>
 </template>
 
