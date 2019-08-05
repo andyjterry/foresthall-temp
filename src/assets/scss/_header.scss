@@ -1,5 +1,7 @@
 .header-wrap {
   filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+  position: relative;
+  z-index: 9999;
 }
 
 header {
@@ -9,9 +11,10 @@ header {
   width: 110vw;
   -webkit-transform: rotate(-4.5deg);
   transform: rotate(-4.5deg);
-  background: crimson;
+  background: $red;
   height: 20vh;
   border-bottom: 4px solid white;
+  z-index: 9999;
   // clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 5vh, -90vh 12vw);
 
 }
@@ -19,12 +22,22 @@ header {
 .logo {
   position: absolute;
   left: 5vw;
-  top: 3vh;
+  top: 6vh;
+  transform: rotate(4.5deg);
 
-}
+  h1 {
+    font-family: 'montserrat';
+    display: inline;
+    position: relative;
+    top: 5px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+  }
 
-img {
-  width: 125px;
+  img {
+    width: 125px;
+    vertical-align: middle;
+  }
 }
 
 
