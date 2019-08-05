@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo|Montserrat|Roboto|Rubik&display=swap");
+.header-wrap {
+  -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+          filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+}
+
+header {
+  position: relative;
+  top: -9vh;
+  left: -3vw;
+  width: 110vw;
+  -webkit-transform: rotate(-4.5deg);
+  transform: rotate(-4.5deg);
+  background: crimson;
+  height: 20vh;
+  border-bottom: 4px solid white;
+}
+
+.logo {
+  position: absolute;
+  left: 5vw;
+  top: 3vh;
+}
+
+img {
+  width: 125px;
+}
+
+nav {
+  float: right;
+  position: relative;
+  margin-right: 28vw;
+  bottom: -16vh;
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  text-shadow: crimson 1px 1px 1px;
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: 'Roboto';
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 23px;
+}
+
+nav a:hover {
+  color: #242424;
+  font-weight: 900;
+  position: relative;
+}
+
+body {
+  overflow: hidden;
+  background: #242424;
+  color: white;
+  width: 100vw;
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */

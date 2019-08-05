@@ -1,0 +1,55 @@
+.header-wrap {
+  filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+}
+
+header {
+  position: relative;
+  top: -9vh;
+  left: -3vw;
+  width: 110vw;
+  -webkit-transform: rotate(-4.5deg);
+  transform: rotate(-4.5deg);
+  background: crimson;
+  height: 20vh;
+  border-bottom: 4px solid white;
+  // clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 5vh, -90vh 12vw);
+
+}
+
+.logo {
+  position: absolute;
+  left: 5vw;
+  top: 3vh;
+
+}
+
+img {
+  width: 125px;
+}
+
+
+nav {
+  float: right;
+  position: relative;
+  margin-right: 28vw;
+  bottom: -16vh;
+  text-align: right;
+
+  a {
+    color: white;
+    text-shadow: $red 1px 1px 1px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Roboto';
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 23px;
+
+    &:hover {
+      color: $dark;
+      font-weight: 900;
+      position: relative;
+      // top: -3px;
+    }
+  }
+}

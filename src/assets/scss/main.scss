@@ -1,0 +1,13 @@
+// Imported Fonts
+@import url('https://fonts.googleapis.com/css?family=Archivo|Montserrat|Roboto|Rubik&display=swap');
+@import 'variables';
+// @import 'fonts';
+@import 'header';
+
+body {
+  overflow: hidden;
+  background: $dark;
+  color: white;
+  width: 100vw;
+  margin: 0;
+}
