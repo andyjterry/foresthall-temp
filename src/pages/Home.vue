@@ -1,15 +1,18 @@
 <template>
-  <div>HOME</div>
+  <div>
+    HOME
+    <FrontSlider />
+  </div>
 </template>
 
 <script>
-// import Navigation from "./Navigation";
+import FrontSlider from "../components/FrontSlider";
 
 export default {
-  // name: "Navigation",
-  // components: {
-  //   Navigation
-  // }
+  name: "app",
+  components: {
+    FrontSlider
+  }
 };
 </script>
 
