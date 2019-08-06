@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import App from './App.vue';
 import Header from './layout/Header';
+import Footer from './layout/Footer';
+import Navigation from './layout/Navigation';
 import VueRouter from 'vue-router';
 import css from './assets/css/main.css'
 
@@ -10,7 +12,9 @@ Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
 
+
 const router = new VueRouter({
+  mode: 'history',
   routes
 });
 

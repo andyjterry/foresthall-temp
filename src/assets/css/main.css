@@ -2,13 +2,13 @@
 .header-wrap {
   -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
           filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
-  position: fixed;
-  z-index: 9999;
+  position: relative;
+  z-index: 20;
 }
 
 header {
   position: relative;
-  top: -25vh;
+  margin-top: -25vh;
   left: -3vw;
   width: 110vw;
   -webkit-transform: rotate(-4.5deg);
@@ -20,11 +20,12 @@ header {
 }
 
 .logo {
-  position: absolute;
+  position: relative;
   left: 5vw;
-  top: 7.5vh;
+  top: 8.5vh;
   -webkit-transform: rotate(4.5deg);
           transform: rotate(4.5deg);
+  display: table;
 }
 
 .logo h1 {
@@ -45,24 +46,39 @@ nav {
   float: right;
   position: relative;
   margin-right: 28vw;
-  bottom: -16vh;
+  bottom: -8.5vh;
   text-align: right;
+  /* display: table; */
+}
+
+nav .router-link-exact-active {
+  color: #242424 !important;
+  font-weight: 900;
+  background: white;
+  padding: 1px 2px 3px 4px;
+  text-shadow: none;
 }
 
 nav a {
   color: white;
-  text-shadow: firebrick 1px 1px 1px;
   text-decoration: none;
   margin-left: 20px;
   font-family: 'Roboto';
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-size: 23px;
+  font-size: 16px;
 }
 
 nav a:hover {
-  color: #242424;
-  position: relative;
+  color: #242424 !important;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  text-shadow: none;
+  padding-bottom: 8px;
 }
 
 .footer-wrap {
@@ -75,6 +91,69 @@ footer {
   bottom: 0px;
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -83,45 +162,73 @@ body {
   width: 100vw;
   margin: 0;
   margin-top: 14vh;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-          box-shadow: inset 0 0 10px #000000;
   width: 100vw;
+}
+
+.coachestable {
+  font-size: 1vw !important;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.front-slider {
+  top: 0;
+  max-height: 200vh !important;
 }
 
 .FrontImage {
   position: relative;
-  top: -175px;
+  margin-bottom: -72vh;
   z-index: 1;
-  border-bottom: white solid 5px;
+  -webkit-transform: skewY(-4.5deg);
+          transform: skewY(-4.5deg);
+  -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+          filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+}
+
+.FrontImage img {
+  width: 100vw;
 }
 
 .FrontImage .frontimgtxt {
   font-family: 'Montserrat';
   padding: 5px;
   position: relative;
-  bottom: 30vh;
+  top: -37vh;
   left: 10vw;
+  -webkit-transform: skewY(4.5deg);
+          transform: skewY(4.5deg);
 }
 
-.FrontImage .frontimgtxt h1 {
+.FrontImage h1 {
   display: table;
   font-size: 2.5vw;
   text-transform: uppercase;
   background: rgba(178, 34, 34, 0.9);
   padding: 20px 10px 0 10px;
   position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
 }
 
-.FrontImage .frontimgtxt h2 {
+.FrontImage h2 {
   display: table;
   font-size: 2vw;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.6);
   padding: 0px 0 0 10px;
   position: relative;
+  top: -22px;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
 }
 
-.FrontImage img {
-  width: 100vw;
+.FrontImage .fa-charter {
+  top: 10px;
+  width: 69px;
 }
 /*# sourceMappingURL=main.css.map */

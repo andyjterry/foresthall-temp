@@ -4,6 +4,7 @@
 // @import 'fonts';
 @import 'header';
 @import 'footer';
+@import 'animation';
 
 body {
   overflow-y: scroll;
@@ -11,49 +12,82 @@ body {
   background: $dark;
   color: white;
   width: 100vw;
-
   margin: 0;
   margin-top: 14vh;
-  box-shadow: inset 0 0 10px #000000;
+  // box-shadow: inset 0 0 10px #000000;
   width: 100vw;
+}
+
+.coachestable {
+  // position: relative;
+  // top: 42vh;
+  font-size: 1vw !important;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.front-slider {
+  // position: relative;
+  top: 0;
+  max-height: 200vh !important;
 }
 
 .FrontImage {
   position: relative;
-  top: -175px;
+  // top: -32vh;
+  margin-bottom: -72vh;
   z-index: 1;
-  border-bottom: white solid 5px;
+  transform: skewY(-4.5deg);
+  filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+  // height: 20vh;
+
+
+  img {
+
+    // position: relative;
+    width: 100vw;
+    // transform: skewY(-4.5deg);
+
+    // clip-path: polygon(0 0, 100% 0, 100% 78%, 0 98%);
+  }
 
   .frontimgtxt {
     font-family: 'Montserrat';
-    // display: inline-block;
-
     padding: 5px;
     position: relative;
-    bottom: 30vh;
+    top: -37vh;
     left: 10vw;
-
-    h1 {
-      display: table;
-      font-size: 2.5vw;
-      text-transform: uppercase;
-      background: rgba(178, 34, 34, 0.9);
-      padding: 20px 10px 0 10px;
-      position: relative;
-    }
-
-    h2 {
-      display: table;
-      font-size: 2vw;
-      text-transform: uppercase;
-      background: rgba(0, 0, 0, 0.9);
-      padding: 0px 0 0 10px;
-
-      position: relative;
-    }
+    transform: skewY(4.5deg)
   }
 
-  img {
-    width: 100vw;
+  h1 {
+    display: table;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    background: rgba(178, 34, 34, 0.9);
+    padding: 20px 10px 0 10px;
+    position: relative;
+    animation-duration: 1s;
+    animation-name: fadein;
+  }
+
+  h2 {
+    display: table;
+    font-size: 2vw;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0px 0 0 10px;
+    position: relative;
+    top: -22px;
+    animation-duration: 5s;
+    animation-name: fadein;
+  }
+
+  .fa-charter {
+    // position: absolute;
+    top: 10px;
+    width: 69px;
+
+    img {}
   }
 }
