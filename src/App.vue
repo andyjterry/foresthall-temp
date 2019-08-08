@@ -1,9 +1,12 @@
 <template>
   <div id="app">
-    <Header />
-
-    <router-view />
-    <Footer />
+    <div class="container">
+      <!-- <div id="app" style="
+      margin-top: -5vh;">-->
+      <Header />
+      <router-view />
+      <!-- <Footer /> -->
+    </div>
   </div>
 </template>
 
@@ -13,7 +16,7 @@ import Footer from "./layout/Footer";
 export default {
   components: {
     Header,
-    Header
+    Footer
   }
 };
 </script>

@@ -1,16 +1,8 @@
 <template>
   <homepage>
-    <div class="front-slider">
-      <FrontImage />
-    </div>
+    <!-- <FrontImage /> -->
 
-    <!-- <FrontSlider /> -->
-    <div class="coachestable">
-      <CoachInfo />
-    </div>
-    <div class="affiliation">
-      <Affiliation />
-    </div>
+    <!-- <CoachInfo /> -->
   </homepage>
 </template>
 

@@ -5,6 +5,10 @@
 @import 'header';
 @import 'footer';
 @import 'animation';
+@import 'coachestable';
+
+
+
 
 body {
   overflow-y: scroll;
@@ -13,17 +17,13 @@ body {
   color: white;
   width: 100vw;
   margin: 0;
-  margin-top: 14vh;
-  // box-shadow: inset 0 0 10px #000000;
   width: 100vw;
 }
 
-.coachestable {
-  // position: relative;
-  // top: 42vh;
-  font-size: 1vw !important;
-  font-family: "Montserrat";
-  font-weight: 600;
+.container {
+  margin-top: -87px;
+  padding: 0;
+}
 }
 
 .front-slider {
@@ -35,7 +35,7 @@ body {
 .FrontImage {
   position: relative;
   // top: -32vh;
-  margin-bottom: -72vh;
+  // margin-bottom: -72vh;
   z-index: 1;
   transform: skewY(-4.5deg);
   filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
@@ -83,6 +83,14 @@ body {
     animation-name: fadein;
   }
 
+
+  .straighenup {
+    background: white;
+    position: relative;
+    height: 20vh;
+  }
+
+
   .fa-charter {
     // position: absolute;
     top: 10px;
@@ -91,3 +99,7 @@ body {
     img {}
   }
 }
+
+
+
+// Mobile Style Sheets

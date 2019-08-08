@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo|Montserrat|Roboto|Rubik&display=swap");
 .header-wrap {
+  margin-top: -25vh;
   -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
           filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
   position: relative;
   z-index: 20;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 header {
   position: relative;
-  margin-top: -25vh;
+  margin-top: 7.5vh;
   left: -3vw;
   width: 110vw;
   -webkit-transform: rotate(-4.5deg);
@@ -22,7 +26,7 @@ header {
 .logo {
   position: relative;
   left: 5vw;
-  top: 8.5vh;
+  top: 7vh;
   -webkit-transform: rotate(4.5deg);
           transform: rotate(4.5deg);
   display: table;
@@ -43,42 +47,40 @@ header {
 }
 
 nav {
-  float: right;
   position: relative;
-  margin-right: 28vw;
-  bottom: -8.5vh;
-  text-align: right;
-  /* display: table; */
+  text-align: left;
+  left: 42vw;
+  font-size: 1rem;
+  top: 4.5vh;
+  display: inline-block;
 }
 
-nav .router-link-exact-active {
+.router-link-exact-active {
   color: #242424 !important;
   font-weight: 900;
   background: white;
-  padding: 1px 2px 3px 4px;
   text-shadow: none;
+  padding-bottom: 4px;
 }
 
-nav a {
+a {
   color: white;
   text-decoration: none;
   margin-left: 20px;
   font-family: 'Roboto';
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-size: 16px;
 }
 
-nav a:hover {
+a:hover {
   color: #242424 !important;
-  font-weight: 900;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: background-color 500ms;
   transition: background-color 500ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   text-shadow: none;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
 }
 
 .footer-wrap {
@@ -161,14 +163,12 @@ body {
   color: white;
   width: 100vw;
   margin: 0;
-  margin-top: 14vh;
   width: 100vw;
 }
 
-.coachestable {
-  font-size: 1vw !important;
-  font-family: "Montserrat";
-  font-weight: 600;
+.container {
+  margin-top: -10px;
+  padding: 0;
 }
 
 .front-slider {
@@ -178,7 +178,6 @@ body {
 
 .FrontImage {
   position: relative;
-  margin-bottom: -72vh;
   z-index: 1;
   -webkit-transform: skewY(-4.5deg);
           transform: skewY(-4.5deg);
@@ -225,6 +224,12 @@ body {
           animation-duration: 5s;
   -webkit-animation-name: fadein;
           animation-name: fadein;
+}
+
+.FrontImage .straighenup {
+  background: white;
+  position: relative;
+  height: 20vh;
 }
 
 .FrontImage .fa-charter {

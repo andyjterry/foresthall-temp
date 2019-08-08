@@ -1,6 +1,7 @@
 <template>
   <div>
     <footer>
+      FOOTER
       <!-- <Sponsors /> -->
     </footer>
   </div>

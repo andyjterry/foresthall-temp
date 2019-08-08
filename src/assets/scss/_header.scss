@@ -1,20 +1,19 @@
 .header-wrap {
+  // position: relative;
+  // margin-top: -25vh;
   filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
-  position: relative;
-  // position: fixed;
   z-index: 20;
+  display: inline-flex;
 }
 
 header {
-  position: relative;
-  // top: -25vh;
-  margin-top: -25vh;
+  margin-top: 7.5vh;
   left: -3vw;
   width: 110vw;
   -webkit-transform: rotate(-4.5deg);
   transform: rotate(-4.5deg);
   background: firebrick;
-  height: 20vh;
+  height: 500px;
   border-bottom: 4px solid white;
   z-index: 10;
   // clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 5vh, -90vh 12vw);
@@ -22,9 +21,9 @@ header {
 }
 
 .logo {
-  position: relative;
+  // position: relative;
   left: 5vw;
-  top: 8.5vh;
+  top: 7vh;
   transform: rotate(4.5deg);
   display: table;
 
@@ -45,45 +44,36 @@ header {
 
 
 nav {
-  float: right;
-  position: relative;
-  margin-right: 28vw;
-  bottom: -8.5vh;
-  text-align: right;
-  /* display: table; */
+  // position: absolute;
+  bottom: 0rem;
+  text-align: left;
+  left: 42vw;
+  font-size: 1rem;
+}
 
-  // .router-link-active {
-  //   color: orange !important;
-  // }
+.router-link-exact-active {
+  color: $dark !important;
+  font-weight: 900;
+  background: white;
+  text-shadow: none;
+  padding-bottom: 4px;
+}
 
-  .router-link-exact-active {
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: 'Roboto';
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  &:hover {
     color: $dark !important;
-    font-weight: 900;
-    background: white;
-    padding: 1px 2px 3px 4px;
+    // font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 500ms;
+    transition-timing-function: ease-in-out;
     text-shadow: none;
-  }
-
-  a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-family: 'Roboto';
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-size: 16px;
-
-    &:hover {
-      // color: $dark;
-      // position: relative;
-
-      color: $dark !important;
-      font-weight: 900;
-      background-color: rgba(255, 255, 255, 0.9);
-      transition: background-color 500ms;
-      transition-timing-function: ease-in-out;
-      text-shadow: none;
-      padding-bottom: 8px;
-    }
+    padding-bottom: 4px;
   }
 }
