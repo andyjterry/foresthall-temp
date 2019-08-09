@@ -1,34 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo|Montserrat|Roboto|Rubik&display=swap");
-.header-wrap {
-  -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
-          filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
-  z-index: 20;
-}
-
 header {
   position: relative;
-  margin-top: -11.5vh;
-  left: -3vw;
-  /* width: 110vw; */
-  /* -webkit-transform: rotate(-4.5deg); */
-  -webkit-transform: rotate(-4.5deg);
-          transform: rotate(-4.5deg);
   background: firebrick;
-  height: 20vh;
+  height: 140px;
   border-bottom: 4px solid white;
   z-index: 10;
+  -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+          filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
 }
 
 .logo {
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   position: absolute;
-  -webkit-transform: rotate(4.5deg);
-          transform: rotate(4.5deg);
-  bottom: 2rem;
-  text-align: left;
-  left: 3vw;
-  /* font-size: 1rem; */
+  bottom: 10px;
+  left: 20px;
 }
 
 .logo h1 {
@@ -41,7 +26,7 @@ header {
 }
 
 .logo img {
-  width: 125px;
+  width: 100px;
   vertical-align: middle;
 }
 
@@ -51,8 +36,9 @@ nav {
   display: inline-flex;
   position: absolute;
   bottom: 0rem;
+  right: 0;
+  margin-right: 100px;
   text-align: right;
-  left: 42vw;
   font-size: 1rem;
 }
 
@@ -157,33 +143,57 @@ footer {
           animation-duration: 1s;
 }
 
-body {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background: #242424;
+.lotto {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  background: firebrick;
+}
+
+.lotto h1 {
+  font-family: 'montserrat';
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+
+.lotto p {
+  font-size: 2rem;
+}
+
+.lotto .number ul {
+  list-style: none !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.lotto .number ul li {
+  border-radius: 50%;
+  background: royalblue;
   color: white;
-  width: 100vw;
+  font-size: 3rem;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  /* position: relative; */
-  /* top: -461px; */
-  /* left: -49px; */
-  margin-top: -20px;
+.flex-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.front-slider {
-  top: 0;
-  max-height: 200vh !important;
+.col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .FrontImage {
   position: relative;
   z-index: 1;
-  -webkit-transform: skewY(-4.5deg);
-          transform: skewY(-4.5deg);
+  /* -webkit-transform: skewY(-4.5deg); */
+  /* transform: skewY(-4.5deg); */
+  /* -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8)); */
   -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
           filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
 }
@@ -193,49 +203,64 @@ body {
 }
 
 .FrontImage .frontimgtxt {
+  position: absolute;
   font-family: 'Montserrat';
-  padding: 5px;
-  position: relative;
-  top: -37vh;
-  left: 10vw;
-  -webkit-transform: skewY(4.5deg);
-          transform: skewY(4.5deg);
+  display: -ms-inline-grid;
+  display: inline-grid;
+  bottom: 5vw;
+  left: 5vw;
+  min-width: 10%;
+  max-width: 50%;
+  z-index: 30;
 }
 
-.FrontImage h1 {
-  display: table;
-  font-size: 2.5vw;
+.FrontImage .frontimgtxt h1 {
+  font-size: inherit;
   text-transform: uppercase;
   background: rgba(178, 34, 34, 0.9);
   padding: 20px 10px 0 10px;
-  position: relative;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-name: fadein;
           animation-name: fadein;
 }
 
-.FrontImage h2 {
-  display: table;
-  font-size: 2vw;
+.FrontImage .frontimgtxt h2 {
+  font-size: 1vh;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 0px 0 0 10px;
-  position: relative;
-  top: -22px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0 0 0 10px;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-name: fadein;
           animation-name: fadein;
 }
 
-.FrontImage .straighenup {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #242424;
+  color: white;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+}
+
+.straighenup {
   background: white;
   position: relative;
   height: 20vh;
 }
 
-.FrontImage .fa-charter {
+.fa-charter {
   top: 10px;
   width: 69px;
 }

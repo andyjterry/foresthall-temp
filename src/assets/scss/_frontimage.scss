@@ -1,0 +1,49 @@
+.FrontImage {
+  position: relative;
+  // top: -20vh;
+  z-index: 1;
+  /* -webkit-transform: skewY(-4.5deg); */
+  /* transform: skewY(-4.5deg); */
+  /* -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8)); */
+  filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+
+
+  img {
+
+    // position: relative;
+    width: 100vw;
+    // transform: skewY(-4.5deg);
+
+    // clip-path: polygon(0 0, 100% 0, 100% 78%, 0 98%);
+  }
+
+  .frontimgtxt {
+    position: absolute;
+    font-family: 'Montserrat';
+    display: inline-grid;
+    bottom: 5vw;
+    left: 5vw;
+    min-width: 10%;
+    max-width: 50%;
+    z-index: 30;
+
+    h1 {
+      font-size: inherit;
+      text-transform: uppercase;
+      background: rgba(178, 34, 34, 0.9);
+      padding: 20px 10px 0 10px;
+      animation-duration: 1s;
+      animation-name: fadein;
+    }
+
+    h2 {
+      font-size: 1vh;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 0 0 0 10px;
+      animation-duration: 5s;
+      animation-name: fadein;
+    }
+  }
+
+}

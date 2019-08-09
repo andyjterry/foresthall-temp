@@ -1,10 +1,10 @@
 <template>
   <div class="FrontImage">
     <!-- <img src="src\assets\img\Andy.jpg" alt /> -->
-    <img src="src\assets\img\garybennett2.jpg" alt />
+    <img src="src\assets\img\garybennett3.jpg" alt />
     <div class="frontimgtxt">
-      <h1>New season new look</h1>
-      <h2>keep an eye out for our new website...</h2>
+      <h1>Defensive Masterclass</h1>
+      <h2>Former Boro Defender Dean Gordon and Sunderland Captain Gary Bennett lead our u11s & 12s in a defensive masterclass.</h2>
     </div>
   </div>
 </template>

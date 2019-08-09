@@ -1,17 +1,37 @@
+.header-wrap {
+  // position: relative;
+  // margin-top: -25vh;
+  position: relative;
+  filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+  z-index: 20;
+
+}
+
 header {
   position: relative;
+  margin-top: -11.5vh;
+  left: -3vw;
+  width: 110%;
+  // margin-bottom: 11.5vh;
+
+  /* -webkit-transform: rotate(-4.5deg); */
+  transform: rotate(-4.5deg);
   background: firebrick;
-  height: 140px;
+  height: 20vh;
   border-bottom: 4px solid white;
   z-index: 10;
-  filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+
 }
 
 .logo {
+  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   position: absolute;
-  bottom: 10px;
-  left: 20px;
+  transform: rotate(4.5deg);
+  bottom: 2rem;
+  text-align: left;
+  left: 4vw;
+  /* font-size: 1rem; */
 
   h1 {
     font-family: 'montserrat';
@@ -23,7 +43,7 @@ header {
   }
 
   img {
-    width: 100px;
+    width: 125px;
     vertical-align: middle;
   }
 }
@@ -33,9 +53,8 @@ nav {
   display: inline-flex;
   position: absolute;
   bottom: 0rem;
-  right: 0;
-  margin-right: 100px;
   text-align: right;
+  left: 42vw;
   font-size: 1rem;
 }
 

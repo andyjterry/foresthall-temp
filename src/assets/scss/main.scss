@@ -6,16 +6,21 @@
 @import 'footer';
 @import 'animation';
 @import 'coachestable';
+@import 'lotto';
+@import 'helpers';
+@import 'frontimage';
 
-
-
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   overflow-y: scroll;
   overflow-x: hidden;
   background: $dark;
   color: white;
-  width: 100vw;
+  // width: 100vw;
   // margin: 0;
   // width: 100vw;
 }
@@ -23,87 +28,25 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  /* position: relative; */
-  /* top: -461px; */
-  /* left: -49px; */
   margin-top: -20px;
 
 
 }
 
 
-.front-slider {
-  // position: relative;
-  top: 0;
-  max-height: 200vh !important;
+.straighenup {
+  background: white;
+  position: relative;
+  height: 20vh;
 }
 
-.FrontImage {
-  position: relative;
-  // top: -32vh;
-  // margin-bottom: -72vh;
-  z-index: 1;
-  transform: skewY(-4.5deg);
-  filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
-  // height: 20vh;
 
+.fa-charter {
+  // position: absolute;
+  top: 10px;
+  width: 69px;
 
-  img {
-
-    // position: relative;
-    width: 100vw;
-    // transform: skewY(-4.5deg);
-
-    // clip-path: polygon(0 0, 100% 0, 100% 78%, 0 98%);
-  }
-
-  .frontimgtxt {
-    font-family: 'Montserrat';
-    padding: 5px;
-    position: relative;
-    top: -37vh;
-    left: 10vw;
-    transform: skewY(4.5deg)
-  }
-
-  h1 {
-    display: table;
-    font-size: 2.5vw;
-    text-transform: uppercase;
-    background: rgba(178, 34, 34, 0.9);
-    padding: 20px 10px 0 10px;
-    position: relative;
-    animation-duration: 1s;
-    animation-name: fadein;
-  }
-
-  h2 {
-    display: table;
-    font-size: 2vw;
-    text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 0px 0 0 10px;
-    position: relative;
-    top: -22px;
-    animation-duration: 5s;
-    animation-name: fadein;
-  }
-
-
-  .straighenup {
-    background: white;
-    position: relative;
-    height: 20vh;
-  }
-
-
-  .fa-charter {
-    // position: absolute;
-    top: 10px;
-    width: 69px;
-
-    img {}
-  }
+  img {}
 }
 
 

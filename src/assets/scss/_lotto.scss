@@ -1,0 +1,32 @@
+.lotto {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  background: firebrick;
+
+  h1 {
+    font-family: 'montserrat';
+    letter-spacing: 2px;
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .number {
+    ul {
+      list-style: none !important;
+      display: inline-flex;
+
+      li {
+        border-radius: 50%;
+        background: royalblue;
+        color: white;
+        font-size: 3rem;
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        margin: 5px;
+      }
+    }
+  }
+}

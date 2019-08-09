@@ -1,10 +1,10 @@
 <template>
-  <div class="header-wrap">
-    <header>
-      <LogoText />
-      <Navigation />
-    </header>
-  </div>
+  <!-- <div class="header-wrap"> -->
+  <header>
+    <LogoText />
+    <Navigation />
+  </header>
+  <!-- </div> -->
 </template>
 
 <script>
