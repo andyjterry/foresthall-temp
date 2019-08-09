@@ -3,29 +3,31 @@
   // margin-top: -25vh;
   filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
   z-index: 20;
-  display: inline-flex;
 }
 
 header {
-  margin-top: 7.5vh;
+  position: relative;
+  margin-top: -11.5vh;
   left: -3vw;
-  width: 110vw;
-  -webkit-transform: rotate(-4.5deg);
+  /* width: 110vw; */
+  /* -webkit-transform: rotate(-4.5deg); */
   transform: rotate(-4.5deg);
   background: firebrick;
-  height: 500px;
+  height: 20vh;
   border-bottom: 4px solid white;
   z-index: 10;
-  // clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 5vh, -90vh 12vw);
 
 }
 
 .logo {
-  // position: relative;
-  left: 5vw;
-  top: 7vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  position: absolute;
   transform: rotate(4.5deg);
-  display: table;
+  bottom: 2rem;
+  text-align: left;
+  left: 3vw;
+  /* font-size: 1rem; */
 
   h1 {
     font-family: 'montserrat';
@@ -44,9 +46,10 @@ header {
 
 
 nav {
-  // position: absolute;
+  display: inline-flex;
+  position: absolute;
   bottom: 0rem;
-  text-align: left;
+  text-align: right;
   left: 42vw;
   font-size: 1rem;
 }

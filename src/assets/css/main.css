@@ -1,22 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo|Montserrat|Roboto|Rubik&display=swap");
 .header-wrap {
-  margin-top: -25vh;
   -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
           filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
-  position: relative;
   z-index: 20;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 header {
   position: relative;
-  margin-top: 7.5vh;
+  margin-top: -11.5vh;
   left: -3vw;
-  width: 110vw;
+  /* width: 110vw; */
+  /* -webkit-transform: rotate(-4.5deg); */
   -webkit-transform: rotate(-4.5deg);
-  transform: rotate(-4.5deg);
+          transform: rotate(-4.5deg);
   background: firebrick;
   height: 20vh;
   border-bottom: 4px solid white;
@@ -24,12 +20,15 @@ header {
 }
 
 .logo {
-  position: relative;
-  left: 5vw;
-  top: 7vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  position: absolute;
   -webkit-transform: rotate(4.5deg);
           transform: rotate(4.5deg);
-  display: table;
+  bottom: 2rem;
+  text-align: left;
+  left: 3vw;
+  /* font-size: 1rem; */
 }
 
 .logo h1 {
@@ -47,12 +46,14 @@ header {
 }
 
 nav {
-  position: relative;
-  text-align: left;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  bottom: 0rem;
+  text-align: right;
   left: 42vw;
   font-size: 1rem;
-  top: 4.5vh;
-  display: inline-block;
 }
 
 .router-link-exact-active {
@@ -162,13 +163,15 @@ body {
   background: #242424;
   color: white;
   width: 100vw;
-  margin: 0;
-  width: 100vw;
 }
 
 .container {
-  margin-top: -10px;
-  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* position: relative; */
+  /* top: -461px; */
+  /* left: -49px; */
+  margin-top: -20px;
 }
 
 .front-slider {

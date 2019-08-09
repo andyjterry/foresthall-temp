@@ -16,15 +16,21 @@ body {
   background: $dark;
   color: white;
   width: 100vw;
-  margin: 0;
-  width: 100vw;
+  // margin: 0;
+  // width: 100vw;
 }
 
 .container {
-  margin-top: -87px;
-  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* position: relative; */
+  /* top: -461px; */
+  /* left: -49px; */
+  margin-top: -20px;
+
+
 }
-}
+
 
 .front-slider {
   // position: relative;
