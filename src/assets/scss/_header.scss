@@ -1,13 +1,30 @@
 header {
   position: relative;
   background: firebrick;
-  height: 140px;
+  width: 105vw;
+  margin-top: -91px;
+  left: -20px;
+  height: 200px;
   border-bottom: 4px solid white;
   z-index: 10;
   filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
+  transform: rotate(-4.5deg);
+
+  // &::after {
+  //   content: "";
+  //   background: url('../img/grass.jpg');
+  //   opacity: 0.1;
+  //   top: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   position: absolute;
+  //   z-index: -1;
+  // }
 }
 
 .logo {
+  transform: rotate(4.5deg);
   display: -ms-inline-flexbox;
   position: absolute;
   bottom: 10px;
@@ -20,6 +37,7 @@ header {
     top: 5px;
     margin-left: 20px;
     letter-spacing: 2px;
+    text-shadow: black 2px 2px;
   }
 
   img {

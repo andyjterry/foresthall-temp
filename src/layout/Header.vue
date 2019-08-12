@@ -1,10 +1,8 @@
 <template>
-  <!-- <div class="header-wrap"> -->
   <header>
     <LogoText />
     <Navigation />
   </header>
-  <!-- </div> -->
 </template>
 
 <script>
@@ -19,6 +17,6 @@ export default {
   }
 };
 </script>
-<style >
+<style scoped>
 </style>
 

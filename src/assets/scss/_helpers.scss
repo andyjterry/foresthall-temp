@@ -5,3 +5,16 @@
 .col {
   flex: 1;
 }
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  // overflow: auto;
+}
+
+
+.hidden {
+  display: none;
+}

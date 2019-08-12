@@ -9,46 +9,20 @@
 @import 'lotto';
 @import 'helpers';
 @import 'frontimage';
+@import 'mixins';
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
+html,
 body {
-  overflow-y: scroll;
+  // position: relative;
   overflow-x: hidden;
-  background: $dark;
-  color: white;
-  // width: 100vw;
-  // margin: 0;
-  // width: 100vw;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -20px;
-
-
+/* Desktop Styles */
+@media screen and (min-width: 501px) {
+  @import './desktop';
 }
 
-
-.straighenup {
-  background: white;
-  position: relative;
-  height: 20vh;
+/* Mobile Styles */
+@media screen and (max-width: 499px) {
+  @import './mobile';
 }
-
-
-.fa-charter {
-  // position: absolute;
-  top: 10px;
-  width: 69px;
-
-  img {}
-}
-
-
-
-// Mobile Style Sheets

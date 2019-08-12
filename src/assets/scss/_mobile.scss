@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  display: none;
+}
+
+.logo {
+  h1 {
+    display: none;
+  }
+
+  img {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+  }
+
+}
+
+.FrontImage {
+  display: none;
+}
+
+
+body ul li {
+  list-style-type: none;
+}
+
+.nav {
+  background-color: #000;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  clear: both;
+}
+
+ul#menu {
+  display: none;
+}
+
+ul#menu li a {
+  width: 100%;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  font-size: 1em;
+  padding: 1.5em 1.6em;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+ul#menu a:hover {
+  background-color: #303030;
+}
+
+
+// @import 'header';
