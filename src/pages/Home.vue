@@ -1,18 +1,21 @@
 <template>
   <homepage>
     <FrontImage />
-    <div class="flex-grid">
+
+    <div class="flex-grid bottom-shadow margin-b-25">
       <div class="col">
-        <!-- <Lotto /> -->
+        <TeamVacancy />
+        <!-- <TeamVacancy /> -->
       </div>
       <div class="col">
         <Lotto />
       </div>
       <div class="col">
-        <!-- <Lotto /> -->
+        <Affiliation />
       </div>
     </div>
-    <!-- <CoachInfo /> -->
+    <Joinus />
+    <CoachInfo />
   </homepage>
 </template>
 
@@ -21,16 +24,20 @@
 import FrontImage from "../components/FrontImage";
 import Lotto from "../components/Lotto";
 import Affiliation from "../components/Affiliation";
-// import CoachInfo from "../components/CoachInfo";
+import TeamVacancy from "../components/TeamVacancy";
+import CoachInfo from "../components/CoachInfo";
+import Joinus from "../components/Joinus";
 
 export default {
   name: "app",
   components: {
     // FrontSlider,
     FrontImage,
+    TeamVacancy,
     Lotto,
-    Affiliation
-    // CoachInfo
+    Affiliation,
+    Joinus,
+    CoachInfo
   }
 };
 </script>

@@ -27,8 +27,8 @@ header {
   transform: rotate(4.5deg);
   display: -ms-inline-flexbox;
   position: absolute;
-  bottom: 10px;
-  left: 20px;
+  bottom: 27px;
+  left: 55px;
 
   h1 {
     font-family: 'montserrat';
@@ -51,7 +51,7 @@ nav {
   display: inline-flex;
   position: absolute;
   bottom: 0rem;
-  right: 0;
+  right: 10rem;
   margin-right: 100px;
   text-align: right;
   font-size: 1rem;
@@ -75,11 +75,11 @@ a {
 
   &:hover {
     color: $dark !important;
-    // font-weight: 900;
-    background-color: rgba(255, 255, 255, 0.9);
-    transition: background-color 500ms;
-    transition-timing-function: ease-in-out;
-    text-shadow: none;
-    padding-bottom: 4px;
+    // // font-weight: 900;
+    // background-color: rgba(255, 255, 255, 0.9);
+    // transition: background-color 500ms;
+    // transition-timing-function: ease-in-out;
+    // text-shadow: none;
+    // padding-bottom: 4px;
   }
 }

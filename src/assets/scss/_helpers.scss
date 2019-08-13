@@ -1,4 +1,5 @@
 .flex-grid {
+  position: relative;
   display: flex;
 }
 
@@ -17,4 +18,39 @@
 
 .hidden {
   display: none;
+}
+
+
+.inline-block {
+  display: inline-block;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+
+}
+
+.img-center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 144px;
+  height: 191px;
+}
+
+.bottom-shadow {
+  box-shadow: black 2px 2px 2px;
+}
+
+.margin-b-25 {
+  padding-bottom: 25px;
+}
+
+.margin-t-25 {
+  padding-top: 25px;
 }

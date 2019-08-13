@@ -1,20 +1,36 @@
 // Imported Fonts
 @import url('https://fonts.googleapis.com/css?family=Archivo|Montserrat|Roboto|Rubik&display=swap');
-@import 'variables';
 // @import 'fonts';
+
+// Main Style Sheets
+@import 'variables';
+@import 'mixins';
 @import 'header';
 @import 'footer';
 @import 'animation';
+
+//Component Stylesheets
 @import 'coachestable';
 @import 'lotto';
 @import 'helpers';
 @import 'frontimage';
-@import 'mixins';
+@import 'teamvacancy';
+@import 'joinus';
+
 
 html,
 body {
   // position: relative;
   overflow-x: hidden;
+  font-family: 'montserrat', 'archivo';
+  letter-spacing: 1px;
+  min-height: 100%;
+}
+
+
+.affiliation {
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* Desktop Styles */

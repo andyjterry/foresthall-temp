@@ -19,8 +19,8 @@ header {
           transform: rotate(4.5deg);
   display: -ms-inline-flexbox;
   position: absolute;
-  bottom: 10px;
-  left: 20px;
+  bottom: 27px;
+  left: 55px;
 }
 
 .logo h1 {
@@ -44,7 +44,7 @@ nav {
   display: inline-flex;
   position: absolute;
   bottom: 0rem;
-  right: 0;
+  right: 10rem;
   margin-right: 100px;
   text-align: right;
   font-size: 1rem;
@@ -69,23 +69,27 @@ a {
 
 a:hover {
   color: #242424 !important;
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-transition: background-color 500ms;
-  transition: background-color 500ms;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  text-shadow: none;
-  padding-bottom: 4px;
-}
-
-.footer-wrap {
-  -webkit-filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
-          filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
 }
 
 footer {
   position: relative;
   bottom: 0px;
+  -webkit-box-shadow: black -2px 2px 2px;
+          box-shadow: black -2px 2px 2px;
+}
+
+footer .footer-bottom {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  height: 30px;
+}
+
+footer .left {
+  float: left;
+}
+
+footer .right {
+  float: right;
 }
 
 @-webkit-keyframes fadein {
@@ -162,6 +166,7 @@ footer {
   width: 100%;
   height: 100%;
   margin: 0;
+  left: 10%;
   border-radius: 50%;
   position: relative;
   background: radial-gradient(circle at 50% 40%, #fcfcfc, #efeff1 66%, #9b5050 100%);
@@ -228,7 +233,7 @@ footer {
           transform: translateX(-25%);
   -webkit-animation: numberReveal 0.1s 1.5s forwards;
           animation: numberReveal 0.1s 1.5s forwards;
-  left: 15px;
+  left: 0%;
 }
 
 @-webkit-keyframes ballRoll {
@@ -354,6 +359,7 @@ footer {
 }
 
 .flex-grid {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,6 +387,44 @@ footer {
 
 .hidden {
   display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column {
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+  padding: 5px;
+}
+
+.img-center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 144px;
+  height: 191px;
+}
+
+.bottom-shadow {
+  -webkit-box-shadow: black 2px 2px 2px;
+          box-shadow: black 2px 2px 2px;
+}
+
+.margin-b-25 {
+  padding-bottom: 25px;
+}
+
+.margin-t-25 {
+  padding-top: 25px;
 }
 
 .FrontImage {
@@ -429,9 +473,69 @@ footer {
           animation-name: fadein;
 }
 
+.teamvacancy {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.teamvacancy .vacancy-header {
+  margin-bottom: 1rem;
+}
+
+.teamvacancy ul {
+  text-align: left;
+  margin-left: 9vw;
+}
+
+.teamvacancy ul li {
+  font-size: 0.75rem;
+  background: yellow;
+  padding: 2px;
+  display: inline-block;
+  color: #242424;
+  margin: 2px;
+  font-weight: 800;
+}
+
+.teamvacancy ul li:hover {
+  background: firebrick;
+  color: white;
+  font-weight: 300;
+  cursor: help;
+}
+
+.joinus {
+  background: lightyellow;
+  height: 200px;
+  margin-bottom: 25px;
+  color: #242424;
+  line-height: 180px;
+}
+
+.joinus h1 {
+  text-align: center;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: -150px;
+}
+
+.joinus p {
+  text-align: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
 html,
 body {
   overflow-x: hidden;
+  font-family: 'montserrat', 'archivo';
+  letter-spacing: 1px;
+  min-height: 100%;
+}
+
+.affiliation {
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* Desktop Styles */
@@ -468,8 +572,8 @@ body {
             transform: rotate(4.5deg);
     display: -ms-inline-flexbox;
     position: absolute;
-    bottom: 10px;
-    left: 20px;
+    bottom: 27px;
+    left: 55px;
   }
   .logo h1 {
     font-family: 'montserrat';
@@ -490,7 +594,7 @@ body {
     display: inline-flex;
     position: absolute;
     bottom: 0rem;
-    right: 0;
+    right: 10rem;
     margin-right: 100px;
     text-align: right;
     font-size: 1rem;
@@ -512,13 +616,6 @@ body {
   }
   a:hover {
     color: #242424 !important;
-    background-color: rgba(255, 255, 255, 0.9);
-    -webkit-transition: background-color 500ms;
-    transition: background-color 500ms;
-    -webkit-transition-timing-function: ease-in-out;
-            transition-timing-function: ease-in-out;
-    text-shadow: none;
-    padding-bottom: 4px;
   }
 }
 
