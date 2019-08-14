@@ -14,6 +14,18 @@ header {
           transform: rotate(-4.5deg);
 }
 
+header::after {
+  content: "";
+  background: url("../img/grass.jpg");
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 header .logo {
   -webkit-transform: rotate(4.5deg);
           transform: rotate(4.5deg);
@@ -36,6 +48,39 @@ header .logo h1 {
 header .logo img {
   width: 100px;
   vertical-align: middle;
+}
+
+header nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  bottom: 0rem;
+  right: 10rem;
+  margin-right: 100px;
+  text-align: right;
+  font-size: 1rem;
+}
+
+header .router-link-exact-active {
+  color: #242424 !important;
+  font-weight: 900;
+  background: white;
+  text-shadow: none;
+  padding-bottom: 4px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: 'Roboto';
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: #242424 !important;
 }
 
 @-webkit-keyframes fadein {
@@ -512,6 +557,17 @@ body {
     -webkit-transform: rotate(-4.5deg);
             transform: rotate(-4.5deg);
   }
+  header::after {
+    content: "";
+    background: url("../img/grass.jpg");
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
   header .logo {
     -webkit-transform: rotate(4.5deg);
             transform: rotate(4.5deg);
@@ -532,6 +588,35 @@ body {
   header .logo img {
     width: 100px;
     vertical-align: middle;
+  }
+  header nav {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: absolute;
+    bottom: 0rem;
+    right: 10rem;
+    margin-right: 100px;
+    text-align: right;
+    font-size: 1rem;
+  }
+  header .router-link-exact-active {
+    color: #242424 !important;
+    font-weight: 900;
+    background: white;
+    text-shadow: none;
+    padding-bottom: 4px;
+  }
+  header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Roboto';
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  header a:hover {
+    color: #242424 !important;
   }
 }
 

@@ -10,17 +10,17 @@ header {
   filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
   transform: rotate(-4.5deg);
 
-  // &::after {
-  //   content: "";
-  //   background: url('../img/grass.jpg');
-  //   opacity: 0.1;
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   position: absolute;
-  //   z-index: -1;
-  // }
+  &::after {
+    content: "";
+    background: url('../img/grass.jpg');
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
 
   .logo {
     transform: rotate(4.5deg);
@@ -46,42 +46,42 @@ header {
   }
 
 
-  // nav {
-  //   display: inline-flex;
-  //   position: absolute;
-  //   bottom: 0rem;
-  //   right: 10rem;
-  //   margin-right: 100px;
-  //   text-align: right;
-  //   font-size: 1rem;
-  // }
+  nav {
+    display: inline-flex;
+    position: absolute;
+    bottom: 0rem;
+    right: 10rem;
+    margin-right: 100px;
+    text-align: right;
+    font-size: 1rem;
+  }
 
-  // .router-link-exact-active {
-  //   color: $dark !important;
-  //   font-weight: 900;
-  //   background: white;
-  //   text-shadow: none;
-  //   padding-bottom: 4px;
-  // }
+  .router-link-exact-active {
+    color: $dark !important;
+    font-weight: 900;
+    background: white;
+    text-shadow: none;
+    padding-bottom: 4px;
+  }
 
-  // a {
-  //   color: white;
-  //   text-decoration: none;
-  //   margin-left: 20px;
-  //   font-family: 'Roboto';
-  //   letter-spacing: 4px;
-  //   text-transform: uppercase;
+  a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Roboto';
+    letter-spacing: 4px;
+    text-transform: uppercase;
 
-  //   &:hover {
-  //     color: $dark !important;
-  //     // // font-weight: 900;
-  //     // background-color: rgba(255, 255, 255, 0.9);
-  //     // transition: background-color 500ms;
-  //     // transition-timing-function: ease-in-out;
-  //     // text-shadow: none;
-  //     // padding-bottom: 4px;
-  //   }
-  // }
+    &:hover {
+      color: $dark !important;
+      // // font-weight: 900;
+      // background-color: rgba(255, 255, 255, 0.9);
+      // transition: background-color 500ms;
+      // transition-timing-function: ease-in-out;
+      // text-shadow: none;
+      // padding-bottom: 4px;
+    }
+  }
 
 
 
