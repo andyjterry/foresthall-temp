@@ -1,0 +1,42 @@
+.teamvacancy {
+  padding-top: 10px;
+  text-align: center;
+
+  a {}
+
+  .vacancy-header {
+    margin-bottom: 1rem;
+
+    h1 {}
+
+    p {}
+
+  }
+
+  ul {
+
+    text-align: left;
+    margin-left: 9vw;
+
+    li {
+      font-size: 0.75rem;
+      background: yellow;
+      padding: 2px;
+      // width: 100%;
+      display: inline-block;
+      color: $dark;
+      margin: 2px;
+      font-weight: 800;
+
+      &:hover {
+
+        background: firebrick;
+        color: white;
+        // padding: 0 3px 0 3px;
+        font-weight: 300;
+        cursor: help;
+      }
+    }
+  }
+
+}
