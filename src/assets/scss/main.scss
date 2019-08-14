@@ -6,7 +6,6 @@
 @import 'variables';
 @import 'mixins';
 @import 'header';
-@import 'footer';
 @import 'animation';
 
 //Component Stylesheets
@@ -18,13 +17,14 @@
 @import 'joinus';
 
 
+
 html,
 body {
   // position: relative;
   overflow-x: hidden;
   font-family: 'montserrat', 'archivo';
   letter-spacing: 1px;
-  min-height: 100%;
+  // min-height: 100%;
 }
 
 

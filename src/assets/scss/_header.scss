@@ -21,65 +21,70 @@ header {
   //   position: absolute;
   //   z-index: -1;
   // }
-}
 
-.logo {
-  transform: rotate(4.5deg);
-  display: -ms-inline-flexbox;
-  position: absolute;
-  bottom: 27px;
-  left: 55px;
+  .logo {
+    transform: rotate(4.5deg);
+    display: -ms-inline-flexbox;
+    position: absolute;
+    bottom: 27px;
+    left: 55px;
 
-  h1 {
-    font-family: 'montserrat';
-    display: inline;
-    position: relative;
-    top: 5px;
-    margin-left: 20px;
-    letter-spacing: 2px;
-    text-shadow: black 2px 2px;
+    h1 {
+      font-family: 'montserrat';
+      display: inline;
+      position: relative;
+      top: 5px;
+      margin-left: 20px;
+      letter-spacing: 2px;
+      text-shadow: black 2px 2px;
+    }
+
+    img {
+      width: 100px;
+      vertical-align: middle;
+    }
   }
 
-  img {
-    width: 100px;
-    vertical-align: middle;
-  }
-}
+
+  // nav {
+  //   display: inline-flex;
+  //   position: absolute;
+  //   bottom: 0rem;
+  //   right: 10rem;
+  //   margin-right: 100px;
+  //   text-align: right;
+  //   font-size: 1rem;
+  // }
+
+  // .router-link-exact-active {
+  //   color: $dark !important;
+  //   font-weight: 900;
+  //   background: white;
+  //   text-shadow: none;
+  //   padding-bottom: 4px;
+  // }
+
+  // a {
+  //   color: white;
+  //   text-decoration: none;
+  //   margin-left: 20px;
+  //   font-family: 'Roboto';
+  //   letter-spacing: 4px;
+  //   text-transform: uppercase;
+
+  //   &:hover {
+  //     color: $dark !important;
+  //     // // font-weight: 900;
+  //     // background-color: rgba(255, 255, 255, 0.9);
+  //     // transition: background-color 500ms;
+  //     // transition-timing-function: ease-in-out;
+  //     // text-shadow: none;
+  //     // padding-bottom: 4px;
+  //   }
+  // }
 
 
-nav {
-  display: inline-flex;
-  position: absolute;
-  bottom: 0rem;
-  right: 10rem;
-  margin-right: 100px;
-  text-align: right;
-  font-size: 1rem;
-}
 
-.router-link-exact-active {
-  color: $dark !important;
-  font-weight: 900;
-  background: white;
-  text-shadow: none;
-  padding-bottom: 4px;
-}
 
-a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-family: 'Roboto';
-  letter-spacing: 4px;
-  text-transform: uppercase;
 
-  &:hover {
-    color: $dark !important;
-    // // font-weight: 900;
-    // background-color: rgba(255, 255, 255, 0.9);
-    // transition: background-color 500ms;
-    // transition-timing-function: ease-in-out;
-    // text-shadow: none;
-    // padding-bottom: 4px;
-  }
 }

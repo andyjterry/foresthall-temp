@@ -14,7 +14,7 @@ header {
           transform: rotate(-4.5deg);
 }
 
-.logo {
+header .logo {
   -webkit-transform: rotate(4.5deg);
           transform: rotate(4.5deg);
   display: -ms-inline-flexbox;
@@ -23,7 +23,7 @@ header {
   left: 55px;
 }
 
-.logo h1 {
+header .logo h1 {
   font-family: 'montserrat';
   display: inline;
   position: relative;
@@ -33,63 +33,9 @@ header {
   text-shadow: black 2px 2px;
 }
 
-.logo img {
+header .logo img {
   width: 100px;
   vertical-align: middle;
-}
-
-nav {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: absolute;
-  bottom: 0rem;
-  right: 10rem;
-  margin-right: 100px;
-  text-align: right;
-  font-size: 1rem;
-}
-
-.router-link-exact-active {
-  color: #242424 !important;
-  font-weight: 900;
-  background: white;
-  text-shadow: none;
-  padding-bottom: 4px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-family: 'Roboto';
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-a:hover {
-  color: #242424 !important;
-}
-
-footer {
-  position: relative;
-  bottom: 0px;
-  -webkit-box-shadow: black -2px 2px 2px;
-          box-shadow: black -2px 2px 2px;
-}
-
-footer .footer-bottom {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  height: 30px;
-}
-
-footer .left {
-  float: left;
-}
-
-footer .right {
-  float: right;
 }
 
 @-webkit-keyframes fadein {
@@ -530,7 +476,6 @@ body {
   overflow-x: hidden;
   font-family: 'montserrat', 'archivo';
   letter-spacing: 1px;
-  min-height: 100%;
 }
 
 .affiliation {
@@ -567,7 +512,7 @@ body {
     -webkit-transform: rotate(-4.5deg);
             transform: rotate(-4.5deg);
   }
-  .logo {
+  header .logo {
     -webkit-transform: rotate(4.5deg);
             transform: rotate(4.5deg);
     display: -ms-inline-flexbox;
@@ -575,7 +520,7 @@ body {
     bottom: 27px;
     left: 55px;
   }
-  .logo h1 {
+  header .logo h1 {
     font-family: 'montserrat';
     display: inline;
     position: relative;
@@ -584,38 +529,9 @@ body {
     letter-spacing: 2px;
     text-shadow: black 2px 2px;
   }
-  .logo img {
+  header .logo img {
     width: 100px;
     vertical-align: middle;
-  }
-  nav {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    position: absolute;
-    bottom: 0rem;
-    right: 10rem;
-    margin-right: 100px;
-    text-align: right;
-    font-size: 1rem;
-  }
-  .router-link-exact-active {
-    color: #242424 !important;
-    font-weight: 900;
-    background: white;
-    text-shadow: none;
-    padding-bottom: 4px;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-family: 'Roboto';
-    letter-spacing: 4px;
-    text-transform: uppercase;
-  }
-  a:hover {
-    color: #242424 !important;
   }
 }
 

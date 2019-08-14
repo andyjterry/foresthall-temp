@@ -1,5 +1,5 @@
-import Vue from 'vue';
-import App from './App.vue';
+import Vue from 'vue'
+import App from './App.vue'
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Navigation from './layout/Navigation';

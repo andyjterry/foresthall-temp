@@ -2,10 +2,9 @@
   <homepage>
     <FrontImage />
 
-    <div class="flex-grid bottom-shadow margin-b-25">
+    <div class="flex-grid bottom-shadow">
       <div class="col">
         <TeamVacancy />
-        <!-- <TeamVacancy /> -->
       </div>
       <div class="col">
         <Lotto />
