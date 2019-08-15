@@ -1,10 +1,18 @@
-.flex-grid {
+.flex {
   position: relative;
   display: flex;
+  flex-direction: row;
+
+  @include bp(mobile) {
+    flex-direction: column;
+  }
+
+
 }
 
 .col {
   flex: 1;
+
 }
 
 .flex-center {
@@ -45,12 +53,4 @@
 
 .bottom-shadow {
   box-shadow: black 2px 2px 2px;
-}
-
-.margin-b-25 {
-  padding-bottom: 25px;
-}
-
-.margin-t-25 {
-  padding-top: 25px;
 }

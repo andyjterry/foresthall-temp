@@ -2,7 +2,7 @@
   <homepage>
     <FrontImage />
 
-    <div class="flex-grid bottom-shadow">
+    <div class="flex">
       <div class="col">
         <TeamVacancy />
       </div>
@@ -14,7 +14,6 @@
       </div>
     </div>
     <Joinus />
-    <CoachInfo />
   </homepage>
 </template>
 
@@ -24,7 +23,6 @@ import FrontImage from "../components/FrontImage";
 import Lotto from "../components/Lotto";
 import Affiliation from "../components/Affiliation";
 import TeamVacancy from "../components/TeamVacancy";
-import CoachInfo from "../components/CoachInfo";
 import Joinus from "../components/Joinus";
 
 export default {
@@ -35,8 +33,8 @@ export default {
     TeamVacancy,
     Lotto,
     Affiliation,
-    Joinus,
-    CoachInfo
+    Joinus
+    // CoachInfo
   }
 };
 </script>

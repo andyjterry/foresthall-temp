@@ -16,7 +16,14 @@
 @import 'teamvacancy';
 @import 'joinus';
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {}
+
+@import 'header';
 
 html,
 body {
@@ -25,6 +32,8 @@ body {
   font-family: 'montserrat', 'archivo';
   letter-spacing: 1px;
   // min-height: 100%;
+  background-color: $dark;
+  color: white;
 }
 
 
@@ -33,12 +42,106 @@ body {
   text-align: center;
 }
 
-/* Desktop Styles */
-@media screen and (min-width: 501px) {
-  @import './desktop';
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
 }
 
-/* Mobile Styles */
-@media screen and (max-width: 499px) {
-  @import './mobile';
+
+
+// COACHES DETAILS
+.coachesdetailpage {
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+
+  .coachdetails {
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: start;
+    flex-wrap: wrap;
+    // margin: auto;
+    text-align: center;
+    justify-content: center;
+
+
+    .coachdetail {
+      // border: 2px solid red;
+      width: 200px;
+      margin: 10px;
+
+      // border: 2px solid red;
+
+
+      img {
+        width: 200px;
+        height: 100px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        object-fit: cover;
+      }
+
+      h3 {
+        color: yellow;
+      }
+
+      p {}
+
+    }
+
+    button {
+      @include bp(desktop) {
+        display: none;
+      }
+
+      width: 200px;
+      height: 25px;
+      background: greenyellow;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 700;
+
+
+
+
+
+
+      a {
+        text-decoration: none !important;
+        color: black !important;
+
+
+        &:hover {
+          background: green;
+          cursor: pointer;
+        }
+
+      }
+    }
+  }
 }
+
+@include bp(mobile) {
+  flex-direction: column;
+}
+
+
+// COACHES DETAILS
+
+
+// /* Desktop Styles */
+// @media screen and (min-width: 501px) {
+//   @import './desktop';
+// }
+
+// /* Mobile Styles */
+// @media screen and (max-width: 499px) {
+//   @import './mobile';
+// }

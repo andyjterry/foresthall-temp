@@ -1,1 +1,26 @@
+// Media Query Breakpoint 
+@mixin bp($point) {
 
+    $bp-mobile: "(max-width: 600px)";
+    $bp-desktop: "(max-width: 1250px)";
+    $bp-tv: "(max-width: 1600px)";
+
+    @if $point==tv {
+        @media #{$bp-tv} {
+            @content;
+        }
+    }
+
+    @else if $point==desktop {
+        @media #{$bp-desktop} {
+            @content;
+        }
+    }
+
+    @else if $point==mobile {
+        @media #{$bp-mobile} {
+            @content;
+        }
+    }
+
+}

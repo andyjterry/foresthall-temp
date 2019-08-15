@@ -1,16 +1,19 @@
 <template>
   <div>
-    <CoachInfo />
+    <!-- <CoachInfo /> -->
+    <CoachDetails />
   </div>
 </template>
 
 <script>
-import CoachInfo from "../components/CoachInfo";
+// import CoachInfo from "../components/CoachInfo";
+import CoachDetails from "../components/CoachDetails";
 
 export default {
   name: "app",
   components: {
-    CoachInfo
+    // CoachInfo,
+    CoachDetails
   }
 };
 </script>

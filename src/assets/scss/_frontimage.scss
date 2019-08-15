@@ -1,6 +1,6 @@
 .FrontImage {
   position: relative;
-  margin-top: -150px;
+  margin-top: calc(-150px + -3rem);
   z-index: 1;
   filter: drop-shadow(-1px 10px 3px rgba(24, 24, 24, 0.8));
 
