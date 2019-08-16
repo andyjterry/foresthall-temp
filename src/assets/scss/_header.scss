@@ -107,13 +107,30 @@ header {
 .mobile-header {
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 
   .logo {
-    text-align: center;
+
 
     img {
-      width: 70px;
+      width: 147px;
 
     }
+  }
+
+  .newapp {
+    // transform: rotate(-5deg);
+    position: relative;
+    top: 15px;
+    padding: 10px;
+    background: firebrick;
+    display: table;
+    margin: auto;
+    font-weight: 900;
+    animation: fadeinout 3s infinite;
+  }
+
+  @include bp(desktop) {
+    display: none;
   }
 }

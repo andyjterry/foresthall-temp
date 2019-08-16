@@ -3,6 +3,11 @@
   padding: 10px 10px 10px 10px;
   background: firebrick;
 
+  @include bp(mobile) {
+    margin-top: 50px;
+    display: none;
+  }
+
 
   .ball {
     display: inline-block;

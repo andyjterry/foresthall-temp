@@ -40,6 +40,13 @@ body {
 .affiliation {
   padding-top: 20px;
   text-align: center;
+
+  img {
+    @include bp(mobile) {
+      width: 100%;
+    }
+  }
+
 }
 
 .container {

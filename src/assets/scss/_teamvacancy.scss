@@ -50,4 +50,23 @@
     }
   }
 
+
+
+  .find-coach {
+    display: none;
+    margin-top: 40px;
+
+    @include bp(mobile) {
+      display: block;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+    background: royalblue;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-weight: 900;
+  }
 }

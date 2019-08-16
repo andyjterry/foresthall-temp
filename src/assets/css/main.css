@@ -106,14 +106,29 @@ header a:hover {
 .mobile-header {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.mobile-header .logo {
   text-align: center;
 }
 
 .mobile-header .logo img {
-  width: 70px;
+  width: 147px;
+}
+
+.mobile-header .newapp {
+  position: relative;
+  top: 15px;
+  padding: 10px;
+  background: firebrick;
+  display: table;
+  margin: auto;
+  font-weight: 900;
+  -webkit-animation: fadeinout 3s infinite;
+          animation: fadeinout 3s infinite;
+}
+
+@media (min-width: 601px) {
+  .mobile-header {
+    display: none;
+  }
 }
 
 @-webkit-keyframes fadein {
@@ -177,6 +192,46 @@ header a:hover {
           animation-name: pulse;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinout {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeinout2 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeinout2 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 footer {
@@ -264,6 +319,13 @@ footer .footer-bottom {
   text-align: center;
   padding: 10px 10px 10px 10px;
   background: firebrick;
+}
+
+@media (max-width: 600px) {
+  .lotto {
+    margin-top: 50px;
+    display: none;
+  }
 }
 
 .lotto .ball {
@@ -664,6 +726,26 @@ footer .footer-bottom {
   cursor: help;
 }
 
+.teamvacancy .find-coach {
+  display: none;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .teamvacancy .find-coach {
+    display: block;
+  }
+}
+
+.teamvacancy button {
+  margin-top: 20px;
+  background: royalblue;
+  border: none;
+  padding: 5px;
+  color: white;
+  font-weight: 900;
+}
+
 .joinus {
   background: lightyellow;
   height: 200px;
@@ -804,14 +886,29 @@ header a:hover {
 .mobile-header {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.mobile-header .logo {
   text-align: center;
 }
 
 .mobile-header .logo img {
-  width: 70px;
+  width: 147px;
+}
+
+.mobile-header .newapp {
+  position: relative;
+  top: 15px;
+  padding: 10px;
+  background: firebrick;
+  display: table;
+  margin: auto;
+  font-weight: 900;
+  -webkit-animation: fadeinout 3s infinite;
+          animation: fadeinout 3s infinite;
+}
+
+@media (min-width: 601px) {
+  .mobile-header {
+    display: none;
+  }
 }
 
 html,
@@ -826,6 +923,12 @@ body {
 .affiliation {
   padding-top: 20px;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .affiliation img {
+    width: 100%;
+  }
 }
 
 .container {

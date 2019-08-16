@@ -9,6 +9,15 @@
         <li>u{{ d.age }} {{ d.team }}'s : {{ d.fname}} {{ d.phone }}</li>
       </a>
     </ul>
+    <div class="find-coach">
+      <h3>
+        Need To Find a
+        <br />Coach or Team?
+      </h3>
+      <a href="/coaches">
+        <button>CONTACT LIST</button>
+      </a>
+    </div>
   </div>
 </template>
 
