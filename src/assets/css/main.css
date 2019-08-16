@@ -943,12 +943,33 @@ body {
   }
 }
 
-.coachesdetailpage h1 {
-  text-align: center;
+.coachesdetailpage {
+  margin-top: 3rem;
 }
 
-.coachesdetailpage h2 {
-  text-align: center;
+@media (max-width: 600px) {
+  .coachesdetailpage {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .coachesdetailpage h1 {
+    font-size: 23px;
+    color: lightgoldenrodyellow;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .coachesdetailpage h2 {
+    font-size: 18px;
+  }
+}
+
+.coachesdetailpage h2 a {
+  color: firebrick;
+  text-decoration: none;
 }
 
 .coachesdetailpage .coachdetails {

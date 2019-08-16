@@ -14,9 +14,10 @@
         Need To Find a
         <br />Coach or Team?
       </h3>
-      <a href="/coaches">
+      <router-link to="coaches">
+        <!-- <a :href="{{coaches}}"> -->
         <button>CONTACT LIST</button>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>

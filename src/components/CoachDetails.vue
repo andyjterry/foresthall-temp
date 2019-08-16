@@ -2,10 +2,10 @@
   <div class="coachesdetailpage">
     <h1>Forest Hall Coaches List</h1>
     <h2>
-      If you cannot find who you are looking for. Contact
+      If you cannot find who you are looking for... Contact
       <a
         href="mailto:sam.corbett@foresthalljuniors.co.uk"
-      >Sam</a>.
+      >Sam</a>
     </h2>
 
     <div class="coachdetails">

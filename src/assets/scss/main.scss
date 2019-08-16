@@ -63,12 +63,31 @@ body {
 
 // COACHES DETAILS
 .coachesdetailpage {
-  h1 {
+  margin-top: 3rem;
+
+  @include bp(mobile) {
     text-align: center;
   }
 
+
+  h1 {
+    @include bp(mobile) {
+      font-size: 23px;
+      color: lightgoldenrodyellow;
+
+      margin-bottom: 10px;
+    }
+  }
+
   h2 {
-    text-align: center;
+    @include bp(mobile) {
+      font-size: 18px;
+    }
+
+    a {
+      color: firebrick;
+      text-decoration: none;
+    }
   }
 
 
