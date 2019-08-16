@@ -8,6 +8,7 @@
     />
     <div class="container">
       <Header />
+      <MobileHeader />
       <router-view />
       <Footer />
     </div>
@@ -15,10 +16,12 @@
 </template>
 
 <script>
+import MobileHeader from "./components/MobileHeader";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 export default {
   components: {
+    MobileHeader,
     Header,
     Footer
   }

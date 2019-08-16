@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="coachlist">
     <!-- <CoachInfo /> -->
     <CoachDetails />
   </div>

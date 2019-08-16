@@ -89,31 +89,9 @@ header {
       // padding-bottom: 4px;
     }
   }
-}
 
 
-.mobile-header {
-  @include bp(desktop) {
-    display: none;
-  }
 
-  .mobile-header {
-    @include bp(tv) {
-      display: none;
-    }
-  }
-}
 
-.mobile-header {
-  margin-top: 10px;
-  margin-bottom: 10px;
 
-  .logo {
-    text-align: center;
-
-    img {
-      width: 70px;
-
-    }
-  }
 }

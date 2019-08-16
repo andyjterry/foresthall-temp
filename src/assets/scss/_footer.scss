@@ -1,0 +1,82 @@
+footer {
+    background: #111;
+    color: white;
+    padding: 4vw 10vw 0 10vw;
+
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            background: white;
+            color: firebrick;
+            font-weight: 900;
+            padding: 0 2px 0 2px;
+        }
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 2px;
+
+        h1 {
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {}
+        }
+
+        .footer-col-1 {
+            // border: 1px solid #fff;
+            // background-color: #D6E9FE;
+            height: 200px;
+            flex: 1;
+        }
+
+        .footer-col-2 {
+            // border: 1px solid #fff;
+            // background-color: #D6E9FE;
+            // height: 200px;
+            flex: 2;
+        }
+
+        .findusonline {
+            display: flex;
+            justify-content: start;
+            position: relative;
+            margin-right: 10px;
+        }
+    }
+
+    .footer-bottom {
+        background: #101010;
+        color: firebrick;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+    @include bp(mobile) {
+        display: none;
+    }
+
+}
+
+// @media (max-width: 575px) {
+//     .footer-container {
+//         display: none;
+//         flex-direction: column;
+//     }
+// }

@@ -5,9 +5,9 @@
       <p>We have spaces in the following teams.</p>
     </div>
     <ul v-for="(d,index) in dataArray" :key="index">
-      <!-- <a v-bind:href="`tel: + {{d.phone}}`"> -->
-      <li>u{{ d.age }} {{ d.team }}'s : {{ d.fname}} {{ d.phone }}</li>
-      <!-- </a> -->
+      <a :href="`tel:${d.phone}`">
+        <li>u{{ d.age }} {{ d.team }}'s : {{ d.fname}} {{ d.phone }}</li>
+      </a>
     </ul>
   </div>
 </template>
@@ -21,14 +21,14 @@ export default {
           fname: "Steve",
           sname: "Jamieson",
           age: 12,
-          team: "Phantoms",
+          team: "Phantom",
           phone: "07305429345"
         },
         {
           fname: "Andy",
           sname: "Terry",
           age: 12,
-          team: "Lions",
+          team: "Lion",
           phone: "07447460461"
         },
         {

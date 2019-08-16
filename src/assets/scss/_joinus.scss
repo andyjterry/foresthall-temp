@@ -18,4 +18,9 @@
     text-align: center;
   }
 
+  @include bp(mobile) {
+    display: none;
+    margin-top: 0px;
+  }
+
 }

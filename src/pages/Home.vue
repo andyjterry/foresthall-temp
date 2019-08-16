@@ -2,7 +2,7 @@
   <homepage>
     <FrontImage />
 
-    <div class="flex">
+    <div class="flex home-panels">
       <div class="col">
         <TeamVacancy />
       </div>

@@ -8,7 +8,6 @@
 <script>
 import LogoText from "../components/LogoText";
 import Navigation from "./Navigation";
-
 export default {
   name: "app",
   components: {

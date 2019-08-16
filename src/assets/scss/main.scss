@@ -7,9 +7,9 @@
 @import 'mixins';
 @import 'header';
 @import 'animation';
+@import 'footer';
 
-//Component Stylesheets
-@import 'coachestable';
+//Component Stylesheet
 @import 'lotto';
 @import 'helpers';
 @import 'frontimage';
@@ -46,6 +46,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: -20px;
+
+  @include bp(mobile) {
+    margin-top: 0px;
+  }
 }
 
 
@@ -131,6 +135,8 @@ body {
 @include bp(mobile) {
   flex-direction: column;
 }
+
+
 
 
 // COACHES DETAILS

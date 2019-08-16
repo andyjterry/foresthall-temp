@@ -4,6 +4,7 @@ import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Navigation from './layout/Navigation';
 import VueRouter from 'vue-router';
+
 import css from './assets/css/main.css'
 
 import routes from './routes';

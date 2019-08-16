@@ -2,8 +2,8 @@
 @mixin bp($point) {
 
     $bp-mobile: "(max-width: 600px)";
-    $bp-desktop: "(max-width: 1250px)";
-    $bp-tv: "(max-width: 1600px)";
+    $bp-desktop: "(min-width: 601px)";
+    $bp-tv: "(max-width: 1201px)";
 
     @if $point==tv {
         @media #{$bp-tv} {
